@@ -29,21 +29,24 @@
 
 html {
     font-size: 62.5%;
-    overflow: hidden;
+   
 }
 /* custom scrollbar style */
-html::-webkit-scrollbar{
+/* custom scrollbar style */
+html::-webkit-scrollbar {
     width: 1rem;
-    height: 0.5rem;
-}
-
-html::-webkit-scrollbar-track{
-    background-color: transparent;
-}
-
-html::-webkit-scrollbar-thumb{
-    background-color: (var(--main-color));
-}
+     height: 0.5rem;
+ }
+ 
+ /* Track */
+ html::-webkit-scrollbar-track {
+   background: transparent; 
+ }
+  
+ /* Handle */
+ html::-webkit-scrollbar-thumb {
+   background: var(--main-color); 
+ }
 
 body{
     background-color: var(--light-bg);
@@ -68,9 +71,6 @@ section {
     max-width: 1200px;
 }
 
-.heading {
-
-}
 
 .option-btn, 
 .inline-btn,
